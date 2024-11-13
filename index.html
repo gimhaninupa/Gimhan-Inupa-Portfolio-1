@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">   
+    <script src="https://kit.fontawesome.com/47715efa8a.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Materials/Logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineering Undergraduate</p>
+            <h1>Hi, I'm <span>Gimhan Inupa</span><br>This is my portfolio webpage........</h1>
+        </div>
+    </div>
+</div>
+<!-- ------about------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Materials/User.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="say">I am Gimhan Inupa from Sri Lanka.I am an enthusiastic undergraduate student in Software Engineering, SLTC Research University,Padukka. 
+                   I enjoy exploring various aspects of technology, including coding, problem-solving, and software design. My academic journey has 
+                   equipped me with a solid foundation in programming languages, algorithms, and development methodologies. I am eager to apply my 
+                   knowledge through collaborative projects, internships, and real-world challenges, constantly seeking opportunities to expand my 
+                   skills and make a meaningful impact in the tech world.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web site Development</li>
+                        <li><span>App Development</span><br>Mobile App Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024-Current</span><br>Website Development at CODEGEN</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024-Current</span><br>Bsc(Hons) Undergraduate in Software Engineering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------services------ -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-webflow"></i>
+                <h2>Web Design</h2>
+                <p> Portfolio Websites,E-commerce Platforms,Blog Platforms,Recipe Sharing Platforms</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>App Design</h2>
+                <p>Social Media Apps,Task Management Apps,Language Learning Apps,Fitness Apps</p>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- ------portfolio------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Materials/Work 1.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects users with their friends and family, allowing them to share updates and photos.</p>
+                    <a><i class="fa-solid fa-square-share-nodes"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Materials/Work 2.png">
+                <div class="layer">
+                    <h3>Fitness App</h3>
+                    <p>The app allows users to stream music and discover new artists.</p>
+                    <a><i class="fa-solid fa-dumbbell"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Materials/Work 3.png">
+                <div class="layer">
+                    <h3>Online Shopping Website</h3>
+                    <p>The site allows users to browse and purchase products from various merchants.</p>
+                    <a><i class="fa-solid fa-bag-shopping"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Materials/Work 4.jpg">
+                <div class="layer">
+                    <h3>Blog Website</h3>
+                    <p>The site allows users to create and share blog posts on various topics.</p>
+                    <a><i class="fa-solid fa-blog"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ------contact------ -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> gimhaninupa94@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +94774111808</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/17wMvNpVQ3/?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/gimhan_inupa/profilecard/?igsh=MXBsamlpam54b3VraQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/gimhan-inupa-a3194b315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Materials/My CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Gimhan Inupa <i class="fa-solid fa-heart"></i></p>
+    </div>
+ </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab"); 
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwp2vbMhUM85mZ-EAEGazqKom7PXh0GdNeQLmpp4l7jtVLi0XED4ltKQkoN_AGbiYTJ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succcessfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>    
+</html>
